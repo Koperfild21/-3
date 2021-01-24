@@ -1,0 +1,12 @@
+user_num = int(input("Введите целое положительное число: "))
+biggest_num = 0
+number = user_num
+
+while number > 0:
+    last_number = number % 10
+    if last_number > biggest_num:
+        biggest_num = last_number
+        if biggest_num == 9:
+            break
+        number = number // 10
+print(f"Саммая большая цифра в введенном числе {user_num} равна {biggest_num}")
