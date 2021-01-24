@@ -1,0 +1,13 @@
+while True:
+    days = 1
+    Start = float(input("Изначальный результат: "))
+    Finish = float(input("Финальный результат: "))
+    if Finish < 0 or Start <= 0:
+        print("Результат должен быть больше 0. Изначальное значение != 0.")
+    else:
+        while Finish > Start:
+            Start += Start + 10% Start
+            days += 1
+
+        print(f"Спортсмен добьётся результата за {days} дней")
+        break
