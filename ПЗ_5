@@ -1,0 +1,10 @@
+proceeds = float(input("Введите кол-во выручки - "))
+costs = float(input("Введите кол-во издержек - "))
+difference = proceeds - costs
+if difference > costs:
+    print("Поздравляю Ваш бизнес прибыльный!")
+    print(f"Ваша выручка составила - {difference / proceeds}%")
+    peoples = int(input("Сколько в вашей фирме сотрудников?"))
+    print(f"Каждый сотрудник получит {difference / peoples} $")
+else:
+    print("Ваша выручка отсутствует, результат отрицательный")
